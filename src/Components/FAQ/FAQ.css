@@ -1,0 +1,155 @@
+.faq_head{
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.main_faq{
+    background: url(../Assets/section-bg4.png);
+    background-position: center;
+    /* background-size: cover; */
+    background-repeat: none;
+    /* background-color: rgba(0, 0, 0, 0.812); */
+    /* border-radius: 16px; */
+    padding: 20px 54px 80px;
+    /* max-width: 1054px; */
+    /* margin: 90px auto 0; */
+}
+
+.MIN_acc{
+    background-color: rgba(0, 0, 0, 0.812);
+    border-radius: 16px;
+    padding: 20px 54px 80px; 
+}
+
+.main_faq_here{
+    padding: 40px 10px;
+}
+
+
+   
+/* target this according-body when you want to change acc when it is opened */
+
+.accordion-body {
+    background-color: transparent !important;
+    
+}
+
+
+
+
+
+
+.accordion-button{
+    font-size: 1.125rem;
+      padding: 12px 40px 12px 0 !important;
+    color: white !important;
+    font-weight: 700;
+    margin: 0;
+    cursor: pointer;
+}
+
+
+
+
+
+.accordion-header{
+    /* background-color: transparent !important    ; */
+    border: none !important;
+    padding: .5rem .5rem .5rem 1.5rem;
+    border-bottom: 1px solid  white !important;
+
+
+}
+.accordion-item{
+    /* border-bottom: 1px solid  white !important; */
+    box-shadow:none !important ;
+    background-color: transparent !important;
+   border: none!important;
+    border-radius: 8px !important;
+}
+
+
+
+/* ya button ka background aur padding huti hai is ma  */
+
+.accordion-button:not(.collapsed){
+    background-color: transparent !important;
+    /* background-color: red !important; */
+    border: none !important;
+    /* box-shadow: none !important; */
+    /* border-radius: none !important; */
+    color: white !important;
+}
+
+
+/* ya button hai acc ka jb wo band huta tu is ki styles lyta hai wo  */
+.accordion-button{
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: none !important;
+    /* padding: 1rem 2.5rem 1rem 1.5rem; */
+}
+
+
+
+
+/* blue shadow khtm krny k liya jo focus krny py ata hai  button pr  */
+
+
+.accordion-button:focus {
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: none !important;
+}
+
+  /* ya hai acc ka icon change krny k liya aur icon jb font-awsome ka hu  */
+
+.accordion-button::after{
+    content: "\f062";
+    background-image: none !important;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color: white !important;
+}
+
+
+@media only screen and (max-width:700px){
+    .faq_main_he h2 {
+        font-size: 32px !important;
+    }
+    .accordion-button{
+        font-size: 1.125rem !important;
+    }
+
+    .faq_heading{
+        font-size: 1.75rem !important ;
+        margin-top: 1rem !important;
+    }
+    .main_faq{
+        padding: 20px 0px 20px !important;
+    }
+    .MIN_acc {
+      
+        padding: 20px 9px 80px;
+    }
+}
+
+
+
+
+
+.accordion-item{
+    border-radius: 8px !important;
+}
+
+
+.acc_para{
+    /* color: hsla(0,0%,100%,.7) !important; */
+    color: white !important;
+}
+

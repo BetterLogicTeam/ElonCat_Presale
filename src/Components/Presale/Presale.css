@@ -1,0 +1,177 @@
+.presale-sec {
+  background: url(../Assets/presale-bg.png);
+  background-size: 100% 200%;
+  background-position: center;
+  overflow-x: hidden;
+  padding: 60px 0;
+  background-repeat: no-repeat;
+}
+.timer-box {
+  background-image: url(../Assets/box-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 60px 24px 45px;
+}
+.timer-box h6 {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 800;
+  text-align: center;
+}
+
+.timer-box h6 span {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.timer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 16px;
+  margin: 22px auto;
+  max-width: 395px;
+}
+.timer-container .time-section {
+  background-image: url(../Assets/timer-shape.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 68px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer-container .time-section span,
+.timer-container .dots {
+  font-size: 34px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.timer-box .currency-box h6 {
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+}
+
+.timer-box .currency-box {
+  border: 1px solid #0099ff;
+  border-radius: 16px;
+  text-align: center;
+  max-width: 424px;
+  padding: 16px;
+  margin: 0 auto;
+}
+
+.timer-box .currency-box h6 span {
+  font-weight: normal;
+}
+
+.timer-box h4 {
+  font-size: 16px;
+  line-height: 15px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  margin: 15px 0px 12px;
+}
+.timer-box p {
+  font-size: 14px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #00b1ef;
+  font-weight: 500;
+  text-align: center;
+}
+
+.timer-box .btn {
+  font-weight: bold;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  border-radius: 14px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.timer-box .btn-stake {
+  background-color: #ff0099;
+  max-width: 420px;
+  margin: 13px auto 0px;
+}
+.timer-box .currency-list {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  grid-gap: 5px;
+  max-width: 400px;
+  margin: 13px auto 0px;
+}
+.prsale_lower_btn {
+  font-weight: bold;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  border-radius: 14px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 15px;
+  list-style: none;
+  list-style-type: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #00b1ef;
+  border: none;
+}
+
+.prsale_lower_btn:hover {
+  opacity: 0.8;
+}
+.btn_s {
+  max-width: 420px;
+}
+
+.right_prse {
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 42px;
+  text-align: center;
+  position: relative;
+  top: 7rem;
+}
+
+.copy_addrres{
+  background-color: transparent;
+  border: 1px solid #0099ff;
+  border-radius: 15px;
+  padding: 10px 20px;
+  max-width: 420px;
+}
+
+
+
+@media screen and (max-width:700px)
+{
+  .presale-inner .img-holder h4 {
+    font-size: 26px;
+    line-height: 37px;
+    margin-bottom: 21px;
+}
+}

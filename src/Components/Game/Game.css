@@ -1,0 +1,22 @@
+.game-sec{
+    background-image: url(../Assets/bg-2.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* background: black;   */
+    background-position: center;
+    position: relative;
+    margin: 0;
+    padding: 60px 0;
+    overflow-x: hidden;
+}
+
+
+
+@media screen and (max-width:700px){
+    .game-sec{
+        background-size: 100% 200%;
+    }
+    .game-box-right{
+        margin-top: 2rem;
+    }
+}
