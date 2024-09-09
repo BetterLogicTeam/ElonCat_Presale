@@ -31,11 +31,16 @@ export default function Header() {
                     {/* <Navbar.Toggle aria-controls="responsive-navbar-nav" /> */}
                     <Navbar.Collapse id="responsive-navbar-nav" className={show ? "show":""}>
                         <Nav className="m-auto">
-                            <Nav.Link onClick={handleClose} href="#features">Staking</Nav.Link>
-                            <Nav.Link onClick={handleClose} href="#pricing">Intro</Nav.Link>
-                            <Nav.Link onClick={handleClose} href="#pricing">roadmap</Nav.Link>
-                            <Nav.Link onClick={handleClose} href="#pricing">purchase</Nav.Link>
-                            <Nav.Link onClick={handleClose} href="#pricing">faq</Nav.Link>
+                            <Nav.Link onClick={handleClose} href="#About">About</Nav.Link>
+                            <Nav.Link onClick={handleClose} href="#Presale">Presale</Nav.Link>
+                            <Nav.Link onClick={handleClose} href="#Tiers">Tiers</Nav.Link>
+                            <Nav.Link onClick={handleClose} href="#game">Game</Nav.Link>
+                            <Nav.Link onClick={handleClose} href="#NFT">NFT</Nav.Link>
+                            <Nav.Link onClick={handleClose} href="#TOKENOMICS">TOKENOMICS</Nav.Link>
+                            <Nav.Link onClick={handleClose} href="#RoadMap">RoadMap</Nav.Link>
+                            <Nav.Link onClick={handleClose} href="#Team">Team</Nav.Link>
+                            <Nav.Link onClick={handleClose} href="#Buy">Buy</Nav.Link>
+                            <Nav.Link onClick={handleClose} href="#FAQ">FAQ</Nav.Link>
                             {/* <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">

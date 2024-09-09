@@ -7,7 +7,7 @@ import icon_4 from "../Assets/icon-4.png"
 
 export default function Tiers() {
   return (
-    <div className="sections-wrapper overflow-hidden">
+    <div className="sections-wrapper overflow-hidden" id='Tiers'>
     <section className="tier-sec">
       <div className="container">
         <div className="row">

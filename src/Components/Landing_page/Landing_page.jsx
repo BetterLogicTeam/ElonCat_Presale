@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./Landing_page.css"
 import hero from "../Assets/hero-img.png"
 import banner_logp from "../Assets/banner-logo.png"
 import Header from "../Header/Header"
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 export default function Landing_page() {
+    useEffect(() => {
+        AOS.init(); // Initialize AOS with desired options
+      }, []);
     return (
-        <div className='main_landing_page'>
+        <div className='main_landing_page' id='About'>
             <section className="hero-sec">
             <Header/>
                 <div className="container">

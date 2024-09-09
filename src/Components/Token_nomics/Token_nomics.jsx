@@ -4,7 +4,7 @@ import token from "../Assets/tokenomics.png"
 
 export default function Token_nomics() {
   return (
-    <div className="section-wrapper-3 bg-dark">
+    <div className="section-wrapper-3 bg-dark" id='TOKENOMICS'>
     <section className="token-sec">
       <div className="container">
         <div className="row">
@@ -14,12 +14,12 @@ export default function Token_nomics() {
             </div>
             <div className="row align-items-center">
              
-              <div className="col-xl-7 mt-xl-0 mt-5"  data-aos="fade-right">
+              <div className="col-xl-6 mt-xl-0 mt-5"  data-aos="fade-right">
                 <div className="table-box">
                   <div className="title-box">
                     <h4>ELONXCAT Allocat Stastistics</h4>
                     <h6>
-                      <span>Total Supply :</span>500,000,000,000,000,000
+                      <span>Total Supply :</span> 500 quadrillion
                     </h6>
                     <h6 className="green-text">
                       <span>Public Sale :</span> $ 0.0000018
@@ -29,48 +29,48 @@ export default function Token_nomics() {
                     <table className="table-inner">
                       <thead>
                         <tr>
-                          <th scope="col">펀드</th>
-                          <th scope="col">% 할당</th>
-                          <th scope="col">토큰</th>
+                          <th scope="col">Fund</th>
+                          <th scope="col">% Allocation</th>
+                          <th scope="col">Token</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <td scope="row" className='d-flex align-items-center gap-1'> <div className="cri" style={{background:"#72E8FF"}}></div>  Presale Allocation</td>
                           <td>15%</td>
-                          <td>75,000,000,000,000,000</td>
+                          <td>75 quadrillion</td>
                         </tr>
                         <tr>
                           <td scope="row" className='d-flex gap-1 align-items-center'> <div className="cri" style={{background:"#01C2FF"}}></div>  AIRDROP</td>
                           <td>10%</td>
-                          <td>50,000,000,000,000,000
+                          <td>50 quadrillion
 </td>
                         </tr>
                         <tr>
                           <td scope="row" className='d-flex gap-1 align-items-center'>  <div className="cri" style={{background:"#488DFF"}}></div> PROJECTFUNDs</td>
                           <td>25%</td>
-                          <td>125,000,000,000,000,000
+                          <td>125 quadrillion
 </td>
                         </tr>
                         <tr>
                           <td scope="row" className='d-flex gap-1 align-items-center'>  <div className="cri" style={{background:"#4E57FF"}}></div> Liquidity</td>
                           <td>10%</td>
-                          <td>50,000,000,000,000,000</td>
+                          <td>50 quadrillion</td>
                         </tr>
                         <tr>
                           <td scope="row" className='d-flex gap-1 align-items-center'>  <div className="cri" style={{background:"#9D61FF"}}></div> Marketing</td>
                           <td>20%</td>
-                          <td>100,000,000,000,000,000</td>
+                          <td>100 quadrillion</td>
                         </tr>
                         <tr>
                           <td scope="row" className='d-flex gap-1 align-items-center'>  <div className="cri" style={{background:"#E77FFF"}}></div> Ecosystem Funds</td>
                           <td>15%</td>
-                          <td>75,000,000,000,000,000</td>
+                          <td>75 quadrillion</td>
                         </tr>
                         <tr>
                           <td scope="row" className='d-flex gap-1 align-items-center'>  <div className="cri" style={{background:"#E77FFF"}}></div> Exchanges</td>
                           <td>5%</td>
-                          <td>25,000,000,000,000,000</td>
+                          <td>25 quadrillion</td>
                         </tr>
                       </tbody>
                     </table>
@@ -94,9 +94,74 @@ export default function Token_nomics() {
             <div className="title text-center">
               <h2>OUR PARTNERS &amp; BACKERS</h2>
             </div>
-            <div className="partner-box" data-aos="fade-up"  data-aos-duration="1000">
+
+            <div className="row partner-box" style={{backgroundColor:"rgba(0, 0, 0, 0.812)"}}>
+              <div className="   col-6  col-md-3 my-2 ">
               <img src="images/partner-1.png" alt="" className="img-fluid" />
+                
+              </div>
+              <div className="   col-6  col-md-3 my-2 ">
               <img src="images/partner-2.png" alt="" className="img-fluid" />
+
+                
+              </div>
+              <div className="   col-6  col-md-3 my-2 ">
+              <img src="images/partner-3.png" alt="" className="img-fluid" />
+
+                
+              </div>
+              <div className="   col-6  col-md-3 my-2 ">
+              <img src="images/partner-4.png" alt="" className="img-fluid" />
+
+                
+              </div>
+              <div className="   col-6  col-md-3 my-2 ">
+              <img src="images/partner-5.png" alt="" className="img-fluid" />
+
+                
+              </div>
+              <div className="   col-6  col-md-3 my-2 ">
+              <img src="images/partner-6.png" alt="" className="img-fluid" />
+
+                
+              </div>
+              <div className="   col-6  col-md-3 my-2 ">
+              <img src="images/partner-7.png" alt="" className="img-fluid" />
+
+                
+              </div>
+              <div className="   col-6  col-md-3 my-2 ">
+              <img src="images/partner-8.png" alt="" className="img-fluid" />
+
+                
+              </div>
+              <div className="   col-6  col-md-3 my-2 ">
+              <img src="images/partner-9.png" alt="" className="img-fluid" />
+
+                
+              </div>
+              <div className="   col-6  col-md-3 my-2 ">
+              <img src="images/partner-10.png" alt="" className="img-fluid" />
+
+                
+              </div>
+              <div className="   col-6  col-md-3 my-2 ">
+              <img src="images/partner-11.png" alt="" className="img-fluid" />
+
+                
+              </div>
+              <div className="   col-6  col-md-3 my-2 ">
+              <img src="images/partner-12.png" alt="" className="img-fluid" />
+
+                
+              </div>
+              <div className="   col-6  col-md-3 my-2 ">
+              <img src="images/partner-13.png" alt="" className="img-fluid" />
+
+                
+              </div>
+            </div>
+            {/* <div className="partner-box" data-aos="fade-up"  data-aos-duration="1000">
               <img src="images/partner-3.png" alt="" className="img-fluid" />
               <img src="images/partner-4.png" alt="" className="img-fluid" />
               <img src="images/partner-5.png" alt="" className="img-fluid" />
@@ -108,7 +173,7 @@ export default function Token_nomics() {
               <img src="images/partner-11.png" alt="" className="img-fluid" />
               <img src="images/partner-12.png" alt="" className="img-fluid" />
               <img src="images/partner-13.png" alt="" className="img-fluid" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -120,12 +185,25 @@ export default function Token_nomics() {
             <div className="title text-center">
               <h2>FEATURED IN</h2>
             </div>
-            <div className="feature-list" data-aos="fade-up"  data-aos-duration="1000">
+            <div className="row">
+              <div className="col-6 col-md-3 my-2">
               <img src="images/feature-1.png" alt="" className="img-fluid my-3 my-md-0" />
+              </div>
+              <div className="col-6 col-md-3 my-2">
+              <img src="images/feature-2.png" alt="" className="img-fluid my-3 my-md-0" />
+              </div>
+              <div className="col-6 col-md-3 my-2">
+              <img src="images/feature-3.png" alt="" className="img-fluid my-3 my-md-0" />
+              </div>
+              <div className="col-6 col-md-3 my-2">
+              <img src="images/feature-4.png" alt="" className="img-fluid my-3 my-md-0" />
+              </div>
+            </div>
+            {/* <div className="feature-list" data-aos="fade-up"  data-aos-duration="1000">
               <img src="images/feature-2.png" alt="" className="img-fluid my-3 my-md-0" />
               <img src="images/feature-3.png" alt="" className="img-fluid my-3 my-md-0" />
               <img src="images/feature-4.png" alt="" className="img-fluid my-3 my-md-0" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -181,7 +259,7 @@ export default function Token_nomics() {
         </div>
       </div>
     </section>
-    <section className="team-sec">
+    <section className="team-sec" id='Team'>
       <div className="container">
         <div className="row">
           <div className="col-md-12">
@@ -257,7 +335,7 @@ export default function Token_nomics() {
       </div>
     </section>
     {/* ========= steps-sec ==== */}
-    <section className="step-sec">
+    <section className="step-sec" id='Buy'>
       <div className="container">
         <div className="row">
           <div className="col-md-12">

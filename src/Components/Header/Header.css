@@ -11,7 +11,7 @@
     color: #ffffff !important;
     text-transform: uppercase;
     font-weight: bold;
-    padding: 0px 18px !important;
+    padding: 0px 8px !important;
     transition: all 0.3s;
     filter: drop-shadow(1px 1.732px 3px rgba(0, 0, 0, 0.53));
 }

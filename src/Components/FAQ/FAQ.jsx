@@ -4,7 +4,7 @@ import Accordion from 'react-bootstrap/Accordion';
 
 export default function FAQ() {
     return (
-        <div className='main_faq'>
+        <div className='main_faq' id='FAQ'>
             <div className="container">
                 <h1 className='faq_head text-center my-5'>FREQUENTLY ASKED QUESTIONS</h1>
                 <div className="row justify-content-center" data-aos="fade-up"  data-aos-duration="1000">

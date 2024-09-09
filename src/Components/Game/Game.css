@@ -11,6 +11,13 @@
 }
 
 
+.img-holderimg{
+    height: 400px !important;
+    /* object-fit: cover; */
+    /* aspect-ratio: 2/3;    */
+
+}
+
 
 @media screen and (max-width:700px){
     .game-sec{

@@ -17,7 +17,7 @@ export default function RoadMap() {
   return (
     <div className="section-wrapper-4">
   {/* ========== roadmap-sec ======== */}
-  <section className="roadmap-sec">
+  <section className="roadmap-sec" id='RoadMap'>
     <div className="container">
       <div className="row">
         <div className="col-md-12">
@@ -117,7 +117,7 @@ export default function RoadMap() {
         }}
         loop={true}
         modules={[Pagination,Autoplay]}
-        className="mySwiper"
+        className="mySwiper mt-4"
       >
         <SwiperSlide>
         <div className="roadmap_box">
@@ -125,10 +125,10 @@ export default function RoadMap() {
           <div className="arow">
             {/* <img src="images/active-phase.png" alt="" /> */}
           </div>
-          <div className="pase-box">
+          <div className="pase-box ">
             <h4>PHASE 1</h4>
             <h6>Birth for ELONMUSK &amp; X</h6>
-            <p>Comunity building Token creation Social Channels Are Born</p>
+            <p className='mt-5'>Comunity building Token creation Social Channels Are Born</p>
           </div>
         </div>
         </div>
@@ -138,10 +138,10 @@ export default function RoadMap() {
           <div className="">
             {/* <img src="images/non-active.png" alt="" /> */}
           </div>
-          <div className="pase-box">
+          <div className="pase-box ">
             <h4>PHASE 2</h4>
             <h6>Development</h6>
-            <p>KYC &amp; Audit Marketing Pump Presale Begins</p>
+            <p className='mt-5'>KYC &amp; Audit Marketing Pump Presale Begins</p>
           </div>
         </div>
         </SwiperSlide>
@@ -166,10 +166,10 @@ export default function RoadMap() {
           <div className="arrw">
             {/* <img src="images/non-active.png" alt="" /> */}
           </div>
-          <div className="pase-box">
+          <div className="pase-box ">
             <h4>PHASE 4</h4>
             <h6>Meme Domination</h6>
-            <p>
+            <p className='mt-5'>
               First DEX Listings DEXTools Update ElonXCAT AI Update Auto-burn
             </p>
           </div>
@@ -180,10 +180,10 @@ export default function RoadMap() {
           <div className="arrw">
             {/* <img src="images/non-active.png" alt="" /> */}
           </div>
-          <div className="pase-box">
+          <div className="pase-box ">
             <h4>PHASE 5</h4>
             <h6>Big Bang</h6>
-            <p>Comunity building Token creation Social Channels Are Born</p>
+            <p className='mt-4'>Comunity building Token creation Social Channels Are Born</p>
           </div>
         </div>
         </SwiperSlide>

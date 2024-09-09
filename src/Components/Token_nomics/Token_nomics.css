@@ -259,4 +259,10 @@ th, td {
         display: grid !important;
         grid-gap: 17px 21px !important; 
     }
+
+
+    .partner-box{
+        padding: 10px 20px ;
+        grid-gap: 20px 0px !important;
+    }
 }

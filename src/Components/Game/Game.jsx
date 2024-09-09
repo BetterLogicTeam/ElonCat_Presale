@@ -5,7 +5,7 @@ import game from "../Assets/game-img.png"
 
 export default function Game() {
   return (
-     <section className="game-sec">
+     <section className="game-sec" id='game'>
       <div className="container">
         <div className="row">
           <div className="col-md-12">
@@ -17,7 +17,7 @@ export default function Game() {
                 <div className="col-md-7"  data-aos="fade-right">
                 <div className="game-box-left">
                 <div className="img-holder">
-                  <img src={game} alt="" className="img-fluid" />
+                  <img src={game} alt="" className="img-fluid img-holderimg" />
                   <div className="box-title">
                     <h2>SELECT A LEVEL TO PLAY !</h2>
                   </div>
@@ -36,7 +36,7 @@ export default function Game() {
                     The game aims to introduce users t oblockchain and build a
                     community throughmultiplayer features.
                   </p>
-                  <a href="#" className="btn btn-portal">
+                  <a href="#" className="btn btn-portal mt-5">
                     ElONXCAT Game Portal
                   </a>
                 </div>  

@@ -299,7 +299,7 @@ export default function Presale() {
     }, 3000);
   }, [address, copied]);
   return (
-    <section className="presale-sec">
+    <section className="presale-sec" id="Presale">
       <div className="container">
         <div className="presale-inner">
           <div className="row align-items-start">
@@ -323,8 +323,48 @@ export default function Presale() {
                     <span> ELONXCAT sold :</span> 200,000,000,000,000
                   </h6>
                 </div>
+                <p className="mt-2">TOKEN DISTRIBUTION DATE : 10/24/2024</p>
+
+
+   <div className="btn_s d-flex justify-content-center mx-auto mt-2 gap-2 ">
+                  <button
+                    className="prsale_lower_btn"
+                    style={{
+                      backgroundColor: plan == 0 ? "#fff" : "",
+                      color: plan == 0 ? "#00b1ef" : "",
+                    }}
+                    onClick={() => setplan(0)}
+                  >
+                    {" "}
+                    BNB{" "}
+                  </button>
+                  <button
+                    className="prsale_lower_btn"
+                    style={{
+                      backgroundColor: plan == 1 ? "#fff" : "",
+                      color: plan == 1 ? "#00b1ef" : "",
+                    }}
+                    onClick={() => setplan(1)}
+                  >
+                    {" "}
+                    USDt{" "}
+                  </button>
+                  <button
+                    className="prsale_lower_btn"
+                    style={{
+                      backgroundColor: plan == 2 ? "#fff" : "",
+                      color: plan == 2 ? "#00b1ef" : "",
+                    }}
+                    onClick={() => setplan(2)}
+                  >
+                    {" "}
+                    USDC{" "}
+                  </button>
+                </div>
                 <h4>Balance : {parseFloat(getBalance).toFixed(3)} ELONXCAT</h4>
-                <p>TOKEN DISTRIBUTION DATE : 10/24/2024</p>
+
+               
+
 
                 <div
                   className="w-[420px] my-3 "
@@ -404,6 +444,34 @@ export default function Presale() {
                 >
                   {spinner ? "Loading..." : "Buy Now"}
                 </button>
+                <div
+                  className="btn btn-stake mb-3"
+                  onClick={() =>
+                    address
+                      ? chain?.id == chains[0]?.id
+                        ? open()
+                        : switchNetwork?.(chains[0]?.id)
+                      : open()
+                  }
+                >
+                  {address ? (
+                    chain?.id == chains[0]?.id || chain?.id == chains[1]?.id ? (
+                      address ? (
+                        <>
+                          {`${address?.substring(0, 6)}...${address?.substring(
+                            address.length - 4
+                          )}`}
+                        </>
+                      ) : (
+                        <>Connect Wallet</>
+                      )
+                    ) : (
+                      "Switch NetWork"
+                    )
+                  ) : (
+                    <>Connect Wallet</>
+                  )}
+                </div>
                 <div className="copy_addrres mx-auto my-3 d-flex  align-items-center justify-content-between">
                   <input
                     type="text"
@@ -433,72 +501,8 @@ export default function Presale() {
                   </CopyToClipboard>
                 </div>
 
-                <div className="btn_s d-flex justify-content-center mx-auto mt-2 gap-2 ">
-                  <button
-                    className="prsale_lower_btn"
-                    style={{
-                      backgroundColor: plan == 0 ? "#fff" : "",
-                      color: plan == 0 ? "#00b1ef" : "",
-                    }}
-                    onClick={() => setplan(0)}
-                  >
-                    {" "}
-                    BNB{" "}
-                  </button>
-                  <button
-                    className="prsale_lower_btn"
-                    style={{
-                      backgroundColor: plan == 1 ? "#fff" : "",
-                      color: plan == 1 ? "#00b1ef" : "",
-                    }}
-                    onClick={() => setplan(1)}
-                  >
-                    {" "}
-                    USDt{" "}
-                  </button>
-                </div>
-                <div className="btn_s d-flex justify-content-center mx-auto mt-2 gap-2 ">
-                  <button
-                    className="prsale_lower_btn"
-                    style={{
-                      backgroundColor: plan == 2 ? "#fff" : "",
-                      color: plan == 2 ? "#00b1ef" : "",
-                    }}
-                    onClick={() => setplan(2)}
-                  >
-                    {" "}
-                    USDC{" "}
-                  </button>
-                  {/* <button className="prsale_lower_btn"> solala </button> */}
-                </div>
-                <div
-                  className="btn btn-stake mb-3"
-                  onClick={() =>
-                    address
-                      ? chain?.id == chains[0]?.id
-                        ? open()
-                        : switchNetwork?.(chains[0]?.id)
-                      : open()
-                  }
-                >
-                  {address ? (
-                    chain?.id == chains[0]?.id || chain?.id == chains[1]?.id ? (
-                      address ? (
-                        <>
-                          {`${address?.substring(0, 6)}...${address?.substring(
-                            address.length - 4
-                          )}`}
-                        </>
-                      ) : (
-                        <>Connect Wallet</>
-                      )
-                    ) : (
-                      "Switch NetWork"
-                    )
-                  ) : (
-                    <>Connect Wallet</>
-                  )}
-                </div>
+              
+               
               </div>
             </div>
             <div className="col-lg-6 mt-lg-0 mt-5" data-aos="fade-left">
