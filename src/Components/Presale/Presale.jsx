@@ -21,6 +21,8 @@ import {
   USDC_Contract_Address,
   USDT_Contract_Abi,
   USDT_Contract_Address,
+  Token_Abi,
+  Token_Address
 } from "../../utilies/constant";
 import toast from "react-hot-toast";
 import { CopyToClipboard } from "react-copy-to-clipboard";
@@ -91,8 +93,12 @@ export default function Presale() {
   const { open } = useWeb3Modal();
   const [plan, setplan] = useState(0);
   const [getBalance, setgetBalance] = useState(0);
+  const [totaltokenSold, settotalTokenSold] = useState(0);
+  const [elonbalance, setelonxcat_balance] = useState(0);
+
   const [getBNB_value, setgetBNB_value] = useState("");
   const [showToken, setshowToken] = useState(0);
+  const [totalusdraised, settotalusdraised] = useState(0);
   const [spinner, setspinner] = useState(false);
   const [minPurchaseToken, setminPurchaseToken] = useState("");
 
@@ -119,7 +125,33 @@ export default function Presale() {
         preSale_Contract_ABI,
         preSale_Contract_Address
       );
+
+      let ContractOfElon = new webSupply.eth.Contract(
+        Token_Abi,
+        Token_Address
+      );
+      let usdraise = await ContractOf.methods
+      .totalUSDTRaised()
+      .call();
+      usdraise = webSupply.utils.fromWei(usdraise.toString());
+      settotalusdraised(usdraise)
+
+      let totalTokenSold = await ContractOf.methods
+      .TokenSold()
+      .call();
+      totalTokenSold = webSupply.utils.fromWei(totalTokenSold.toString());
+      settotalTokenSold(totalTokenSold)
+
+
+
+
       if (address) {
+
+        let elonxcat_balance = await ContractOfElon.methods
+            .balanceOf(address)
+            .call();
+            elonxcat_balance = webSupply.utils.fromWei(elonxcat_balance.toString());
+          setelonxcat_balance(elonxcat_balance.toString());
         let value_BNB = webSupply.utils.toWei(
           getBNB_value == "" ? "0" : getBNB_value.toString()
         );
@@ -308,7 +340,7 @@ export default function Presale() {
                 <h6>
                   your elonxcat <br />
                   <p className="mb-0 text-truncate">
-                    00000000000000000000000000000000000000000000
+                  {elonbalance}
                   </p>
                 </h6>
 
@@ -319,8 +351,8 @@ export default function Presale() {
 
                 <div className="currency-box">
                   <h6>
-                    <span> Raised :</span> $4,361,320 <br />
-                    <span> ELONXCAT sold :</span> 200,000,000,000,000
+                    <span> Raised :</span> ${totalusdraised} <br />
+                    <span> ELONXCAT sold :</span> {totaltokenSold}
                   </h6>
                 </div>
                 <p className="mt-2">TOKEN DISTRIBUTION DATE : 10/24/2024</p>
@@ -361,7 +393,7 @@ export default function Presale() {
                     USDC{" "}
                   </button>
                 </div>
-                <h4>Balance : {parseFloat(getBalance).toFixed(3)} ELONXCAT</h4>
+                <h4>Balance : {parseFloat(getBalance).toFixed(3)} {plan == 0 ? "BNB" : plan == 1 ? "USDT" : "USDC"}</h4>
 
                
 
@@ -484,7 +516,7 @@ export default function Presale() {
                       width: "100%",
                     }}
                   /> */}
-                  <p className="mb-0 text-truncate" >0x48625313460AB142a8F69d6071e37503C3eEb96e</p>
+                  <p className="mb-0 text-truncate" >0x30BB79A15a269AC1Cb2f843f409F9a0FeA5D12FE</p>
                   {/* <p className="text-white text-truncate mb-0 text-text-lowercase">
                     {refAddress}
                   </p>{" "} */}
