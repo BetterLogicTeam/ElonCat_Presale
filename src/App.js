@@ -12,22 +12,24 @@ import Stay_connected from './Components/Stay_connected/Stay_connected';
 import Footer from './Components/Footer/Footer';
 import Youtube_section from './Components/Youtube_section/Youtube_section';
 import Game from './Components/Game/Game';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
     <div className="App">
-     {/* <Header/> */}
-     <Landing_page/> 
-      <Presale/> 
-      <Youtube_section/>
-     <Tiers/>
-     <Game/>
-     <NFT_Market/>  
-     <Token_nomics/> 
-     <RoadMap/>
-     <FAQ/>
-     <Stay_connected/>
-     <Footer/>
+      {/* <Header/> */}
+      <Toaster />
+      <Landing_page />
+      <Presale />
+      <Youtube_section />
+      <Tiers />
+      <Game />
+      <NFT_Market />
+      <Token_nomics />
+      <RoadMap />
+      <FAQ />
+      <Stay_connected />
+      <Footer />
     </div>
   );
 }
