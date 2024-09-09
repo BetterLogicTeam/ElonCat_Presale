@@ -473,7 +473,7 @@ export default function Presale() {
                   )}
                 </div>
                 <div className="copy_addrres mx-auto my-3 d-flex  align-items-center justify-content-between">
-                  <input
+                  {/* <input
                     type="text"
                     value={refAddress}
                     style={{
@@ -483,12 +483,13 @@ export default function Presale() {
                       color: "#fff",
                       width: "100%",
                     }}
-                  />
+                  /> */}
+                  <p className="mb-0 text-truncate" >0x48625313460AB142a8F69d6071e37503C3eEb96e</p>
                   {/* <p className="text-white text-truncate mb-0 text-text-lowercase">
                     {refAddress}
                   </p>{" "} */}
                   <CopyToClipboard
-                    text={refAddress}
+                    text={"0x48625313460AB142a8F69d6071e37503C3eEb96e"}
                     onCopy={() => setCopied(true)}
                   >
                     <span style={{ cursor: "pointer", marginLeft: "0.5rem" }}>
