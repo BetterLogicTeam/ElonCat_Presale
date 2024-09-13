@@ -33,7 +33,9 @@
 }
 
 .team-box:hover .team-title{
-    bottom: 10px !important;
+    /* bottom: 10px !important; */
+    z-index: 2;
+    opacity: 0.6;
 }
 
 .team-boxes {
@@ -62,13 +64,13 @@ th, td {
     filter: drop-shadow(2.5px 4.33px 2.5px rgba(0, 0, 0, 0.75));
 }
 
-.team-title {
+/* .team-title {
     position: absolute;
     left: 0;
     right: 0;
     bottom: -100px;
     text-align: center;
-}
+} */
 
 .team-title span {
     font-size: 16px;
@@ -85,7 +87,7 @@ th, td {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -100px;
+    bottom: 10px;
     text-align: center;
 }
 

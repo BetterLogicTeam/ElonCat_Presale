@@ -344,15 +344,34 @@ export default function Presale() {
                   </p>
                 </h6>
 
-                <Countdown
+                {/* <Countdown
                   date={parseInt("1727518286") * 1000}
                   renderer={renderer}
-                />
+                /> */}
+                <div className="timer-container">
+        <div className="time-section">
+          <span id="days">0</span>
+        </div>
+        <div className="dots">:</div>
+        <div className="time-section">
+          <span id="hours">0</span>
+        </div>
+        <div className="dots">:</div>
+        <div className="time-section">
+          <span id="minutes">0</span>
+        </div>
+        <div className="dots">:</div>
+        <div className="time-section">
+          <span id="seconds">0</span>
+        </div>
+      </div>
 
                 <div className="currency-box">
                   <h6>
-                    <span> Raised :</span> ${totalusdraised} <br />
-                    <span> ELONXCAT sold :</span> {totaltokenSold}
+                    {/* <span> Raised :</span> $    {totalusdraised} <br /> */}
+                    <span> Raised :</span> $000000 <br />
+                    {/* <span> ELONXCAT sold :</span>    {totaltokenSold} */}
+                    <span> ELONXCAT sold :</span>    000
                   </h6>
                 </div>
                 <p className="mt-2">TOKEN DISTRIBUTION DATE : 10/24/2024</p>
@@ -379,7 +398,7 @@ export default function Presale() {
                     onClick={() => setplan(1)}
                   >
                     {" "}
-                    USDt{" "}
+                    ETH{" "}
                   </button>
                   <button
                     className="prsale_lower_btn"
@@ -390,10 +409,10 @@ export default function Presale() {
                     onClick={() => setplan(2)}
                   >
                     {" "}
-                    USDC{" "}
+                    USDT{" "}
                   </button>
                 </div>
-                <h4>Balance : {parseFloat(getBalance).toFixed(3)} {plan == 0 ? "BNB" : plan == 1 ? "USDT" : "USDC"}</h4>
+                <h4>Balance : {parseFloat(getBalance).toFixed(3)} {plan == 0 ? "BNB" : plan == 1 ? "ETH" : "USDT"}</h4>
 
                
 
@@ -409,7 +428,7 @@ export default function Presale() {
                           className="pay_with site_font mb-0"
                           style={{ color: "#fff" }}
                         >
-                          Pay with  {plan == 0 ? "BNB" : plan == 1 ? "USDT" : "USDC"}
+                          Pay with  {plan == 0 ? "BNB" : plan == 1 ? "ETH" : "USDT"}
                         </p>
                         <p
                           className="pay_with site_font mb-0"

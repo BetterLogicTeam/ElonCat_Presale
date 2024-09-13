@@ -183,7 +183,11 @@ export default function RoadMap() {
           <div className="pase-box ">
             <h4>PHASE 5</h4>
             <h6>Big Bang</h6>
-            <p className='mt-4'>Comunity building Token creation Social Channels Are Born</p>
+            <p className='mb-1'>CEX Listings</p>
+            <p className='mb-1'>Continued Marketing</p>
+            <p className='mb-1'>Community Incentives</p>
+            <p className='mb-1'>Partnerships with other platforms</p>
+            <p className='mb-1'>Grow Holders to 1M+ Holders</p>
           </div>
         </div>
         </SwiperSlide>

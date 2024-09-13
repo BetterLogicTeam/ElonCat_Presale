@@ -14,13 +14,13 @@ export default function Tiers() {
           <div className="col-md-12">
             <div className="title text-center">
               <h2>ELONXCAT Presale Tiers</h2>
-              <p>ELONXCAT-Total Supply : 500,000,000,000,000</p>
+              <p>ELONXCAT-Total Supply : 5,000,000,000,000</p>
             </div>
             <div className="box-wrapper">
               <div className="tier-box" data-aos="fade-up"  data-aos-duration="1000">
                 <img src="images/coin.svg" alt="" className="img-fluid" />
                 <h2>Tier 1</h2>
-                <h6>$0.00000009</h6>
+                <h6>$0.00009</h6>
                 <p>
                   The initial presale price is seat $0.00000009, which will change
                   to Tier2 after
@@ -29,7 +29,7 @@ export default function Tiers() {
               <div className="tier-box" data-aos="fade-up"  data-aos-duration="1200">
                 <img src="images/coin.svg" alt="" className="img-fluid" />
                 <h2>Tier 2</h2>
-                <h6>$0.000000010</h6>
+                <h6>$0.000010</h6>
                 <p>
                   The price of this tier is set at $0.00000010 from the presale,
                   which will change to Tier3 after 20 days.
@@ -38,7 +38,7 @@ export default function Tiers() {
               <div className="tier-box" data-aos="fade-up"  data-aos-duration="1400">
                 <img src="images/coin.svg" alt="" className="img-fluid" />
                 <h2>Tier 3</h2>
-                <h6>$0.000000050</h6>
+                <h6>$0.000050</h6>
                 <p>
                   The price of this tier is set at $0.00000050 from the presale,
                   which will change to end price after 20 days.End Price:
@@ -48,7 +48,7 @@ export default function Tiers() {
               <div className="tier-box" data-aos="fade-up"  data-aos-duration="1600">
                 <img src="images/coin.svg" alt="" className="img-fluid" />
                 <h2>Tier 4</h2>
-                <h6>$0.00000009</h6>
+                <h6>$0.00009</h6>
                 <p>
                   The presale price of this tier is $0.0000009, which will
                   ELONXCAT presale end With this Price.

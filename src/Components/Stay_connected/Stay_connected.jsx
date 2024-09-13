@@ -13,7 +13,7 @@ export default function Stay_connected() {
           </div>
           <ul className="contact-list" data-aos="fade-up"  data-aos-duration="1000">
             <li>
-              <a href="#">
+              <a href="https://x.com/elonxcat" target='_blank'>
                 
                   <FaXTwitter  className='fs-3'/>
                 {/* <img src="images/twiter.svg" alt="" className="img-fluid" /> */}
@@ -21,7 +21,7 @@ export default function Stay_connected() {
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://t.me/+AAaHFETkvpE3Y2Fl" target='_blank'>
               <FaTelegramPlane />
                 {/* <img src="images/telegram.svg" alt="" className="img-fluid" /> */}
                 telegram

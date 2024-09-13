@@ -17,9 +17,17 @@ export default function Header() {
         <div className='Main_header'>
             <Navbar collapseOnSelect expand="lg" className="bg-transparent">
                 <Container>
+                <div  className='d-flex justify-content-between align-items-center'>
+
+               
                     <Navbar.Brand href="#home" className='main_logo'>
                         <img src={logo} alt="" />
                     </Navbar.Brand>
+                    
+
+                 
+                    <button className='Buy_now_btn d-flex mt-0 d-md-none'> Buy Now</button>
+
                     <span className='d-block d-lg-none' onClick={()=>setShow(!show)} >
         {
         
@@ -28,6 +36,8 @@ export default function Header() {
         
 
         </span> 
+        
+        </div>
                     {/* <Navbar.Toggle aria-controls="responsive-navbar-nav" /> */}
                     <Navbar.Collapse id="responsive-navbar-nav" className={show ? "show":""}>
                         <Nav className="m-auto">
@@ -53,14 +63,14 @@ export default function Header() {
               </NavDropdown.Item>
             </NavDropdown> */}
                         </Nav>
-                        <Nav className='d-flex gap-2 align-items-center' >
+                        <Nav className='d-flex gap-2 d-none d-md-flex align-items-center' >
                             <div className='d-flex gap-2 align-items-center '>
-                                <a href="" className='social_icons fs-4'><FaTelegramPlane />
+                                <a href="https://t.me/+AAaHFETkvpE3Y2Fl" target='_blank' className='social_icons fs-4'><FaTelegramPlane />
                                 </a>
-                                <a href="" className='social_icons fs-4'><FaXTwitter />
+                                <a href="https://x.com/elonxcat" target='_blank'   className='social_icons fs-4'><FaXTwitter />
                                 </a>
                             </div>
-                            <button className='Buy_now_btn'> Buy Now</button>
+                            <button className='Buy_now_btn d-none d-md-flex'> Buy Now</button>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

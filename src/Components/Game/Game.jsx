@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Game.css"
 import game from "../Assets/game-img.png"
+import slect_leve from "../Assets/slp.png"
 
 
 export default function Game() {
@@ -21,6 +22,7 @@ export default function Game() {
                   <div className="box-title">
                     <h2>SELECT A LEVEL TO PLAY !</h2>
                   </div>
+                  <img src={slect_leve} className='game_cat_img' alt="" />
                 </div>
                 </div>
                 </div>
