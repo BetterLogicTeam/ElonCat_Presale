@@ -398,7 +398,7 @@ export default function Presale() {
                     onClick={() => setplan(1)}
                   >
                     {" "}
-                    ETH{" "}
+                    USDC{" "}
                   </button>
                   <button
                     className="prsale_lower_btn"
@@ -412,7 +412,7 @@ export default function Presale() {
                     USDT{" "}
                   </button>
                 </div>
-                <h4>Balance : {parseFloat(getBalance).toFixed(3)} {plan == 0 ? "BNB" : plan == 1 ? "ETH" : "USDT"}</h4>
+                <h4>Balance : {parseFloat(getBalance).toFixed(3)} {plan == 0 ? "BNB" : plan == 1 ? "USDC" : "USDT"}</h4>
 
                
 
@@ -428,7 +428,7 @@ export default function Presale() {
                           className="pay_with site_font mb-0"
                           style={{ color: "#fff" }}
                         >
-                          Pay with  {plan == 0 ? "BNB" : plan == 1 ? "ETH" : "USDT"}
+                          Pay with  {plan == 0 ? "BNB" : plan == 1 ? "USDC" : "USDT"}
                         </p>
                         <p
                           className="pay_with site_font mb-0"

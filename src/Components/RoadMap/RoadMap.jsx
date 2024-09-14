@@ -34,6 +34,7 @@ export default function RoadMap() {
     <div className="road-map-inner">
       <div className="phase-wrapper">
         <div className="phase-1">
+          
           <div className="arrow">
             <img src="images/active-phase.png" alt="" />
           </div>
