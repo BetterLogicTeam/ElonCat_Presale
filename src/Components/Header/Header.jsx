@@ -7,39 +7,42 @@ import logo from "../Assets/logo.png"
 import "./Header.css"
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import {AiOutlineMenu} from 'react-icons/ai'
-import {RxCross2 } from 'react-icons/rx'
+import { AiOutlineMenu } from 'react-icons/ai'
+import { RxCross2 } from 'react-icons/rx'
 export default function Header() {
     const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
+    const handleClose = () => setShow(false);
     return (
         <div className='Main_header'>
             <Navbar collapseOnSelect expand="lg" className="bg-transparent">
-                <Container>
-                <div  className='d-flex justify-content-between align-items-center'>
+                <Container className='justify-content-center'>
+                    <div className='d-flex justify-content-between align-items-center'>
 
-               
-                    <Navbar.Brand href="#home" className='main_logo'>
-                        <img src={logo} alt="" />
-                    </Navbar.Brand>
-                    
 
-                 
-                    <button className='Buy_now_btn d-flex mt-0 d-md-none'> Buy Now</button>
+                        <Navbar.Brand href="#home" className='main_logo'>
+                            <img src={logo} alt="" />
+                        </Navbar.Brand>
 
-                    <span className='d-block d-lg-none' onClick={()=>setShow(!show)} >
-        {
-        
-          show ? <><RxCross2 className='text-white fs-1' /> </>:<><AiOutlineMenu className='text-white fs-1'/></>
-        }
-        
 
-        </span> 
-        
-        </div>
+<div className='d-flex align-items-center justify-content-end gap-3'>
+
+
+                        <button className='Buy_now_btn d-flex mt-0 d-md-none'> Buy Now</button>
+
+                        <span className='d-block d-lg-none' onClick={() => setShow(!show)} >
+                            {
+
+                                show ? <><RxCross2 className='text-white fs-1' /> </> : <><AiOutlineMenu className='text-white fs-1' /></>
+                            }
+
+
+                        </span>
+                        </div>
+
+                    </div>
                     {/* <Navbar.Toggle aria-controls="responsive-navbar-nav" /> */}
-                    <Navbar.Collapse id="responsive-navbar-nav" className={show ? "show":""}>
+                    <Navbar.Collapse id="responsive-navbar-nav" className={show ? "show" : ""}>
                         <Nav className="m-auto">
                             <Nav.Link onClick={handleClose} href="#About">About</Nav.Link>
                             <Nav.Link onClick={handleClose} href="#Presale">Presale</Nav.Link>
@@ -67,7 +70,7 @@ export default function Header() {
                             <div className='d-flex gap-2 align-items-center '>
                                 <a href="https://t.me/+AAaHFETkvpE3Y2Fl" target='_blank' className='social_icons fs-4'><FaTelegramPlane />
                                 </a>
-                                <a href="https://x.com/elonxcat" target='_blank'   className='social_icons fs-4'><FaXTwitter />
+                                <a href="https://x.com/elonxcat" target='_blank' className='social_icons fs-4'><FaXTwitter />
                                 </a>
                             </div>
                             <button className='Buy_now_btn d-none d-md-flex'> Buy Now</button>

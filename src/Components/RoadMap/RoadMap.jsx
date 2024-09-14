@@ -15,9 +15,9 @@ import { Pagination,Autoplay } from 'swiper/modules';
 
 export default function RoadMap() {
   return (
-    <div className="section-wrapper-4">
+    <div className="section-wrapper-4 ">
   {/* ========== roadmap-sec ======== */}
-  <section className="roadmap-sec" id='RoadMap'>
+  <section className="roadmap-sec new_raod_map_here" id='RoadMap'>
     <div className="container">
       <div className="row">
         <div className="col-md-12">
@@ -27,8 +27,11 @@ export default function RoadMap() {
         </div>
       </div>
     </div>
-    {/* <div className="box-divider" /> */}
-    {/* <div className="road-map-inner">
+    <div className="box-divider" />
+    <div className="container">
+
+   
+    <div className="road-map-inner">
       <div className="phase-wrapper">
         <div className="phase-1">
           <div className="arrow">
@@ -83,14 +86,19 @@ export default function RoadMap() {
           <div className="phase-box">
             <h4>PHASE 5</h4>
             <h6>Big Bang</h6>
-            <p>Comunity building Token creation Social Channels Are Born</p>
+            <p className='mb-1'>CEX Listings</p>
+            <p className='mb-1'>Continued Marketing</p>
+            <p className='mb-1'>Community Incentives</p>
+            <p className='mb-1'>Partnerships with other platforms</p>
+            <p className='mb-1'>Grow Holders to 1M+ Holders</p>
           </div>
         </div>
       </div>
-    </div> */}
+    </div>
+    </div>
 
 
-    <div className="container">
+    {/* <div className="container">
     <Swiper
         slidesPerView={1}
         spaceBetween={10}
@@ -123,7 +131,7 @@ export default function RoadMap() {
         <div className="roadmap_box">
         <div className="">
           <div className="arow">
-            {/* <img src="images/active-phase.png" alt="" /> */}
+          
           </div>
           <div className="pase-box ">
             <h4>PHASE 1</h4>
@@ -136,7 +144,7 @@ export default function RoadMap() {
         <SwiperSlide>
         <div className="roadmap_box">
           <div className="">
-            {/* <img src="images/non-active.png" alt="" /> */}
+          
           </div>
           <div className="pase-box ">
             <h4>PHASE 2</h4>
@@ -148,7 +156,7 @@ export default function RoadMap() {
         <SwiperSlide>
         <div className="roadmap_box">
           <div className="arrw">
-            {/* <img src="images/non-active.png" alt="" /> */}
+         
           </div>
           <div className="pase-box">
             <h4>PHASE 3</h4>
@@ -164,7 +172,7 @@ export default function RoadMap() {
         <SwiperSlide>
         <div className="roadmap_box">
           <div className="arrw">
-            {/* <img src="images/non-active.png" alt="" /> */}
+           
           </div>
           <div className="pase-box ">
             <h4>PHASE 4</h4>
@@ -178,7 +186,7 @@ export default function RoadMap() {
         <SwiperSlide>
         <div className="roadmap_box">
           <div className="arrw">
-            {/* <img src="images/non-active.png" alt="" /> */}
+           
           </div>
           <div className="pase-box ">
             <h4>PHASE 5</h4>
@@ -191,13 +199,10 @@ export default function RoadMap() {
           </div>
         </div>
         </SwiperSlide>
-        {/* <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide> */}
+     
       </Swiper>
      
-    </div>
+    </div> */}
   </section>
  
  
