@@ -1,8 +1,9 @@
 .sections-wrapper {
-    background-image: url(../Assets/bg-2.png);
-    background-repeat: no-repeat;
-    background-size: 100% 200%;
-    background: black;  
+    /* background-image: url(../Assets/bg-2.png); */
+    background-image: url(../Assets/Dark-cat.webp);
+    background-repeat: repeat;
+    /* background-size: 100% 200%; */
+    /* background: black;   */
     background-position: 0px -36px;
     position: relative;
     margin: 0;
@@ -11,7 +12,7 @@
 
 
 .tier-sec {
-    padding-top: 113px;
+    padding-top: 13px;
 }
 
 
@@ -21,12 +22,13 @@
 }
 
 .title h2 {
-    font-size: 73px;
+    font-size: 53px;
     line-height: 48px;
     text-transform: uppercase;
     color: #ffffff;
     font-weight: bold;
     margin-bottom: 10px;
+    /* font-family: Supreme; */
 }
 
 .title p {
@@ -62,7 +64,7 @@
 }
 
 .achievement-sec {
-    padding: 120px 0px 116px;
+    padding: 120px 0px 16px;
 }
 
 .tier-box {

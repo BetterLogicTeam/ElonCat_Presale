@@ -1,12 +1,12 @@
 .game-sec{
-    background-image: url(../Assets/bg-2.png);
+    /* background-image: url(../Assets/bg-2.png); */
     background-repeat: no-repeat;
     background-size:cover;
     /* background: black;   */
     background-position: center;
     position: relative;
     margin: 0;
-    padding: 60px 0;
+    padding: 80px 0;
     overflow-x: hidden;
 }
 

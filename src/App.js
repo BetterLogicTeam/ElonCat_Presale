@@ -21,10 +21,10 @@ function App() {
       <Toaster />
       <Landing_page />
       <Presale />
-      <Youtube_section />
+      {/* <Youtube_section /> */}
       <Tiers />
-      <Game />
-      <NFT_Market />
+      {/* <Game /> */}
+      {/* <NFT_Market /> */}
       <Token_nomics />
       <RoadMap />
       <FAQ />

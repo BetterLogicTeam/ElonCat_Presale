@@ -86,7 +86,7 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
 };
 
 export default function Presale() {
-  const webSupply = new Web3("https://bsc-testnet-rpc.publicnode.com");
+  const webSupply = new Web3("wss://bsc-rpc.publicnode.com");
   const { chain } = useNetwork();
   const { chains, switchNetwork } = useSwitchNetwork();
   const { address } = useAccount();
@@ -369,9 +369,9 @@ export default function Presale() {
                 <div className="currency-box">
                   <h6>
                     {/* <span> Raised :</span> $    {totalusdraised} <br /> */}
-                    <span> Raised :</span> $000000 <br />
+                    <span> Raised :</span> ${totalusdraised} <br />
                     {/* <span> ELONXCAT sold :</span>    {totaltokenSold} */}
-                    <span> ELONXCAT sold :</span>    000
+                    <span> ELONXCAT sold :</span>    {totaltokenSold}
                   </h6>
                 </div>
                 <p className="mt-2">TOKEN DISTRIBUTION DATE : 10/24/2024</p>
@@ -535,12 +535,12 @@ export default function Presale() {
                       width: "100%",
                     }}
                   /> */}
-                  <p className="mb-0 text-truncate" >0x30BB79A15a269AC1Cb2f843f409F9a0FeA5D12FE</p>
+                  <p className="mb-0 text-truncate" >0x76bcF29F0ABbD02191D23AEA33FAD93cD75c1128</p>
                   {/* <p className="text-white text-truncate mb-0 text-text-lowercase">
                     {refAddress}
                   </p>{" "} */}
                   <CopyToClipboard
-                    text={"0x48625313460AB142a8F69d6071e37503C3eEb96e"}
+                    text={"0x76bcF29F0ABbD02191D23AEA33FAD93cD75c1128"}
                     onCopy={() => setCopied(true)}
                   >
                     <span style={{ cursor: "pointer", marginLeft: "0.5rem" }}>
@@ -559,7 +559,7 @@ export default function Presale() {
             </div>
             <div className="col-lg-6 mt-lg-0 mt-5" data-aos="fade-left">
               <div className="img-holder">
-                <h4 className="right_prse">
+                <h4 className="right_prse" >
                   elonxcat
                   <br />
                   <span> presale</span>

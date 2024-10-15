@@ -1,7 +1,8 @@
 .presale-sec {
-  background: url(../Assets/presale-bg.png);
-  background-size: 100% 200%;
-  background-position: center;
+  /* background: url(../Assets/presale-bg.png); */
+  background: url(../Assets/new-bg-cat.webp);
+  background-size: 100% 100%;
+  background-position: cover;
   overflow-x: hidden;
   padding: 60px 0;
   background-repeat: no-repeat;

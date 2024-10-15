@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Game.css"
-import game from "../Assets/game-img.png"
+import game from "../Assets/whole0cat.png"
 import slect_leve from "../Assets/slp.png"
 
 
@@ -18,11 +18,11 @@ export default function Game() {
                 <div className="col-md-7"  data-aos="fade-right">
                 <div className="game-box-left">
                 <div className="img-holder">
-                  <img src={game} alt="" className="img-fluid img-holderimg" />
+                  <img src={game} alt="" className="img-fluid img-holderimg" style={{borderRadius:"20px"}} />
                   <div className="box-title">
                     <h2>SELECT A LEVEL TO PLAY !</h2>
                   </div>
-                  <img src={slect_leve} className='game_cat_img' alt="" />
+                  {/* <img src={slect_leve} className='game_cat_img' alt="" /> */}
                 </div>
                 </div>
                 </div>

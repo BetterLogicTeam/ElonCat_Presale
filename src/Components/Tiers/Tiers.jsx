@@ -5,10 +5,15 @@ import icon_2 from "../Assets/icon-2.png"
 import icon_3 from "../Assets/icon-3.png"
 import icon_4 from "../Assets/icon-4.png"
 
+import Youtube_section from '../Youtube_section/Youtube_section'
+import Game from '../Game/Game'
+import NFT_Market from '../NFT_Market/NFT_Market'
+
 export default function Tiers() {
   return (
     <div className="sections-wrapper overflow-hidden" id='Tiers'>
     <section className="tier-sec">
+    <Youtube_section />
       <div className="container">
         <div className="row">
           <div className="col-md-12">
@@ -200,6 +205,8 @@ export default function Tiers() {
           </div>
         </div>
       </div>
+      <Game />
+      <NFT_Market />
     </section>
    
   </div>
